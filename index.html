@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gabriel Vieira Correia | Desenvolvedor de Software</title>
+<meta name="description" content="Portfólio de Gabriel Vieira Correia, estudante de Técnico em Informática em Vila Velha/ES, em busca de estágio ou vaga júnior em desenvolvimento de software.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="#inicio" class="logo">gabriel<span>.dev</span></a>
+      <div class="links" id="links">
+        <a href="#sobre" data-i18n="nav_about">Sobre</a>
+        <a href="#skills" data-i18n="nav_skills">Habilidades</a>
+        <a href="#projetos" data-i18n="nav_projects">Projetos</a>
+        <a href="#formacao" data-i18n="nav_edu">Formação</a>
+        <a href="#contato" data-i18n="nav_contact">Contato</a>
+        <button class="icon-btn" id="lang" aria-label="Mudar idioma / Change language">EN</button>
+        <button class="icon-btn" id="theme" aria-label="Alternar tema">◐</button>
+      </div>
+      <button class="icon-btn burger" id="burger" aria-label="Menu">☰</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap grid">
+    <div>
+      <div class="badge"><span class="dot"></span> <span data-i18n="badge">Aberto a estágio e vagas júnior</span></div>
+      <h1 data-i18n="h1">Olá, eu sou o <span class="grad">Gabriel Vieira Correia</span></h1>
+      <div class="role">&gt; <b id="typed"></b><span class="cursor"></span></div>
+      <p class="lead" data-i18n="lead">Estudante de Técnico em Informática em Vila Velha/ES, focado em criar soluções em software e banco de dados. Gosto de transformar ideias em código que funciona e evolui.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projetos" data-i18n="btn_projects">Ver projetos →</a>
+        <a class="btn" href="#contato" data-i18n="btn_talk">Fale comigo</a>
+        <a class="btn" href="https://github.com/GabrielVieiraDevv" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <div class="code-card rv" aria-hidden="true">
+      <div class="bar"><i></i><i></i><i></i></div>
+<pre><span class="k">const</span> gabriel = {
+  local: <span class="s">"Vila Velha, ES"</span>,
+  curso: <span class="s" data-i18n="code_course">"Técnico em Informática"</span>,
+  stack: [<span class="s">"Python"</span>, <span class="s">"C#"</span>,
+          <span class="s">"JavaScript"</span>, <span class="s">"MySQL"</span>],
+  procurando: <span class="s" data-i18n="code_looking">"estágio / júnior"</span>,
+  aprendendo: <span class="k">true</span>
+};</pre>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="e_about">01. sobre</span>
+    <h2 data-i18n="h_about">Quem sou eu</h2>
+    <p class="sub" data-i18n="sub_about">Programação, banco de dados e vontade de aprender todo dia.</p>
+    <div class="about">
+      <div class="rv">
+        <p data-i18n="about_1">Sou estudante de Técnico em Informática e tenho como foco o desenvolvimento de soluções em software e banco de dados.</p>
+        <p data-i18n="about_2">Tenho experiência prática em projetos acadêmicos e pessoais usando <b>Python</b>, <b>C#</b>, <b>HTML5</b>, <b>CSS3</b>, <b>JavaScript</b> e <b>MySQL</b>, além de domínio do <b>Pacote Office</b>.</p>
+        <p data-i18n="about_3">Agora busco uma oportunidade de <b>estágio ou nível júnior</b> para aplicar o que já sei, aprender com um time de verdade e crescer profissionalmente.</p>
+      </div>
+      <div class="facts rv">
+        <div class="fact"><small data-i18n="f1l">Localização</small><strong data-i18n="f1v">Vila Velha, Espírito Santo</strong></div>
+        <div class="fact"><small data-i18n="f2l">Formação</small><strong data-i18n="f2v">Técnico em Informática (cursando)</strong></div>
+        <div class="fact"><small data-i18n="f3l">Objetivo</small><strong data-i18n="f3v">Estágio ou vaga júnior</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="e_skills">02. habilidades</span>
+    <h2 data-i18n="h_skills">Tecnologias</h2>
+    <p class="sub" data-i18n="sub_skills">Ferramentas que uso nos meus projetos acadêmicos e pessoais.</p>
+    <div class="skills" id="skillGrid"></div>
+  </div>
+</section>
+
+<section id="projetos">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="e_proj">03. projetos</span>
+    <h2 data-i18n="h_proj">Projetos em destaque</h2>
+    <p class="sub" data-i18n="sub_proj">Alguns trabalhos publicados no meu GitHub. Mais coisas chegando!</p>
+    <div class="filters" id="filters">
+      <button class="chip on" data-f="all" data-i18n="f_all">Todos</button>
+      <button class="chip" data-f="web">Web</button>
+      <button class="chip" data-f="academico" data-i18n="f_acad">Acadêmico</button>
+    </div>
+    <div class="projects" id="projGrid"></div>
+  </div>
+</section>
+
+<section id="formacao">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="e_edu">04. formação</span>
+    <h2 data-i18n="h_edu">Trajetória</h2>
+    <p class="sub" data-i18n="sub_edu">Onde estou e para onde quero ir.</p>
+    <div class="tl rv">
+      <div>
+        <small data-i18n="t1s">Atualmente</small>
+        <h3 data-i18n="t1h">Técnico em Informática</h3>
+        <p data-i18n="t1p">Desenvolvimento de software, lógica de programação, banco de dados e desenvolvimento web, com projetos acadêmicos na prática.</p>
+      </div>
+      <div>
+        <small data-i18n="t2s">Próximo passo</small>
+        <h3 data-i18n="t2h">Estágio ou vaga júnior em desenvolvimento</h3>
+        <p data-i18n="t2p">Pronto para contribuir com código, aprender boas práticas e evoluir junto de um time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="wrap">
+    <div class="contact rv">
+      <span class="eyebrow" data-i18n="e_contact">05. contato</span>
+      <h2 data-i18n="h_contact">Vamos conversar?</h2>
+      <p data-i18n="c_p">Estou em busca de uma oportunidade para começar na área. Se o meu perfil faz sentido para a sua equipe, me chama!</p>
+      <div class="btns">
+        <a class="btn primary" href="mailto:devvgabrielcorreia@gmail.com" data-i18n="c_mail">✉ Enviar e-mail</a>
+        <a class="btn" href="https://www.linkedin.com/in/gabriel-vieira-correia-895382427/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/GabrielVieiraDevv" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <div class="mail">devvgabrielcorreia@gmail.com · <button class="chip" id="copy" data-i18n="c_copy">copiar</button></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Gabriel Vieira Correia · Vila Velha/ES</footer>
+<div class="toast" id="toast">E-mail copiado!</div>
+
+<script src="script.js"></script>
+</body>
+</html>
